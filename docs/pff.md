@@ -7,14 +7,15 @@ paginate: true
 
 # Virtual Conveyor System Simulation - Austin Shelton
 
-## Project Overview
+---
+
+## Project Problem
 
 Modern manufacturing relies heavily on conveyor systems for efficient product movement.  
 However, physical testing and operator training can be expensive and risky.
 
 This project proposes a **fully virtual conveyor system** that allows users to:
 - Safely control conveyors through virtual control stations
-- Monitor operations using a real-time HMI
 - Simulate complex conveyor interactions 
 - Syrnchonize mulitple applications to achieve full system integration
 
@@ -42,17 +43,21 @@ The virtual conveyor system will enable:
 - Provide start,stop, jam and speed control
 - Display conveyor status in real time
 
+---
+# Key Features
+
 ## 3. Emergency Stop & Safety Logic
 - Integrate E-stop buttons and safety interlocks
 - Immediately halt/cascade conveyors on faults
 - Display alarms and notifications on the HMI
 
----
 
 ## 4. System Integration
 - Synchronize PLC logic, Emulate3D, FactoryTalk, and Ignition
 - Ensure real-time communication across platforms
 - Test system reliability under different scenarios
+
+---
 
 ## 5. Documentation & Reporting
 - Maintain full project documentation

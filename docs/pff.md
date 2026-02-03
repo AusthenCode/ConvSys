@@ -9,7 +9,7 @@ paginate: true
 
 ---
 
-## Project Problem
+## Project Description
 
 Modern manufacturing relies heavily on conveyor systems for efficient product movement.  
 However, physical testing and operator training can be expensive and risky.
@@ -37,6 +37,7 @@ The virtual conveyor system will enable:
 - Develop ladder logic % structuredText using Studio 5000
 - Control motors, sensors, and safety interlocks
 - Ensure proper sequencing of conveyor operations
+- Implement tracking, HSD, MU, etc...
 
 ## 2. Virtual Control Stations
 - Create virtual control stations using FactoryTalk View

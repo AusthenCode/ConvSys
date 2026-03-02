@@ -70,12 +70,15 @@ Requirements completed: 4/4
 
 ---
 
-## Code
+## Conv
 
-![Conv code](./pics/CONV.png)
+![Conv code](../pics/CONV.png)
 
+---
 
-![PE Fault](./pics/PE_FAULT.png)
+## PE fault
+
+![PE Fault](../pics/PE_FAULT.png)
 
 ---
 

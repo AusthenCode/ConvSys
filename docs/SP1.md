@@ -5,7 +5,7 @@ theme: default
 paginate: true
 ---
 
-# Virtual Conveyor System Simulation - Austin Shelton
+## Virtual Conveyor System Simulation - Austin Shelton
 
 ---
 
@@ -25,11 +25,11 @@ This project proposes a **fully virtual conveyor system** that allows users to:
 
 Sprint 1 Goals:
 
-Implement PLC Ladder logic 
+Implement PLC Ladder logic
 
 Build movement & sensor logic
 
-Define and build integration logic 
+Define and build integration logic
 
 Have routines working properly for testing
 
@@ -70,10 +70,14 @@ Requirements completed: 4/4
 
 ---
 
-# Code
+## Code
 
-![Conv code](pics/CONV.png) 
-![PE Fault](pics/PE_FAULT.png)
+![Conv code](./pics/CONV.png)
+
+
+![PE Fault](./pics/PE_FAULT.png)
+
+---
 
 # Questions?
 

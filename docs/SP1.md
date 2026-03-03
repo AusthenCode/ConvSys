@@ -9,15 +9,11 @@ paginate: true
 
 ---
 
-## Project Description
+## Project Problem
 
 Modern manufacturing relies heavily on conveyor systems for efficient product movement.  
 However, physical testing and operator training can be expensive and risky.
-
-This project proposes a **fully virtual conveyor system** that allows users to:
-- Safely control conveyors through virtual control stations
-- Simulate complex conveyor interactions 
-- Syrnchonize mulitple applications to achieve full system integration
+Making a mistake can cause physical harm or death
 
 ---
 
@@ -62,7 +58,7 @@ Enable User interaction between PLC and FactoryTalk
 
 ## Project Requirements
 
-LoC: 700-800 lines of code / rungs & routines
+LoC: 400 lines of code / 11 Routines & 40 Rungs
 
 Features completed: 4/4
 

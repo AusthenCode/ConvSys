@@ -35,6 +35,81 @@ h2{margin:0 0 8px;color:#0b3f6b}
 ul{margin:8px 0 0 20px}
 .screenshot{max-width:100%;height:auto;border:1px solid #e6e6e6;border-radius:4px}
 .doc-footer{font-size:0.9rem;color:var(--muted);text-align:center;margin:16px 0 32px}
+/* Responsive video grid and wrappers */
+.videos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  align-items: start;
+  width: 100%;
+}
+
+@media (min-width:720px){
+  .videos { grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); }
+}
+
+.video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #000;
+  box-shadow: 0 6px 18px rgba(12,18,28,0.08);
+  max-height: 60vh;
+}
+
+.video-wrap video,
+.video-wrap iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or 'contain' to show full frame */
+  display: block;
+  border: 0;
+}
+
+/* Fallback for browsers without aspect-ratio */
+@supports not (aspect-ratio: 16/9) {
+  .video-wrap { padding-top: 56.25%; height: 0; }
+  .video-wrap video,
+  .video-wrap iframe { position: absolute; top: 0; left: 0; height: 100%; width: 100%; }
+}
+
+/* Prevent accidental horizontal overflow from large media */
+html,body{max-width:100%;overflow-x:hidden}
+/* Responsive video grid and wrappers */
+.videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+  align-items: start;
+  width: 90%;
+}
+
+.videos .video-wrap {
+  position: relative;
+  aspect-ratio: 20/9;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #000;
+  box-shadow: 0 6px 18px rgba(12,18,28,0.08);
+  max-height: 60vh;
+}
+
+.videos .video-wrap video,
+.videos .video-wrap iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: 0;
+}
+
+@supports not (aspect-ratio: 16/9) {
+  .videos .video-wrap { padding-top: 56.25%; height: 0; }
+  .videos .video-wrap video,
+  .videos .video-wrap iframe { position: absolute; top: 0; left: 0; height: 100%; width: 100%; }
+}
 /* Simple styles for the SP1 HTML preview */
 :root{--maxw:960px;--accent:#1e90ff;--muted:#666}
 *{box-sizing:border-box}

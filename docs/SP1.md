@@ -13,7 +13,6 @@ paginate: true
 
 Modern manufacturing relies heavily on conveyor systems for efficient product movement.  
 However, physical testing and operator training can be expensive and risky.
-Making a mistake can cause physical harm or death
 
 ---
 

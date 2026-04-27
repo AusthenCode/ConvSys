@@ -102,7 +102,7 @@
       <div class="videos">
         <div class="video-wrap">
           <video controls muted playsinline>
-            <source src="pics/CONV.mp4" type="video/mp4">
+            <source src="pics/div_e3d.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
           <p class="caption">Final product overview — conveyor sequencing in action.</p>
@@ -138,5 +138,17 @@
       <p class="doc-footer">Designed for fast validation, robust PLC logic, and safe operator training.</p>
     </div>
   </footer>
+
+  <script>
+    document.querySelectorAll('.gallery .images img').forEach(img => {
+      img.addEventListener('click', () => {
+        if (img.requestFullscreen) {
+          img.requestFullscreen();
+        } else if (img.webkitRequestFullscreen) {
+          img.webkitRequestFullscreen();
+        }
+      });
+    });
+  </script>
 </body>
 </html>

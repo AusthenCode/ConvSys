@@ -9,14 +9,30 @@
 <body>
   <header class="hero">
     <div class="container">
-      <h1>ConvSys Conveyor Solutions</h1>
-      <p class="tag">Buy a turnkey conveyor system — virtual design, PLC logic, HMI, and training included.</p>
-      <a class="cta" href="#contact">Request a Quote</a>
+      <nav class="navbar">
+        <div class="nav-flex">
+          <div class="logo">ConvSys</div>
+          <ul class="nav-links">
+            <li><a href="#about" class="active">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#workflow">Workflow</a></li>
+            <li><a href="#final-product">Final Product</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="hero-copy">
+        <h1>ConvSys Conveyor Solutions</h1>
+        <p class="tag">Buy a turnkey conveyor system — virtual design, PLC logic, HMI, and training included.</p>
+        <p class="hero-subtitle">Visualize your conveyor, simulate faults, and train operators before the first physical installation.</p>
+        <a class="cta" href="#contact">Request a Quote</a>
+      </div>
     </div>
   </header>
 
   <main class="container">
-    <section class="about">
+    <section id="about" class="about">
       <h2>What we offer</h2>
       <p>ConvSys provides complete conveyor systems delivered as a service: design, PLC ladder logic, simulation, virtual HMI control stations, and operator training. We combine realistic virtual testing with safe, low-cost commissioning so your team can validate and train before physical installation.</p>
     </section>
@@ -32,7 +48,7 @@
       </ul>
     </section>
 
-    <section class="gallery">
+    <section id="gallery" class="gallery">
       <h2>System Preview</h2>
       <div class="images">
         <figure>
@@ -43,11 +59,84 @@
           <img src="pics/PE_FAULT.png" alt="Photo-eye fault screenshot">
           <figcaption>Fault handling and PE jam detection.</figcaption>
         </figure>
+        <figure>
+          <img src="pics/cs.png" alt="Control system overview screenshot">
+          <figcaption>Control station and status monitoring screen.</figcaption>
+        </figure>
+        <figure>
+          <img src="pics/div_logic.png" alt="Diverter logic screenshot">
+          <figcaption>Diverter logic and path control visuals.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="gallery">
-      <h2>Videos</h2>
+    <section id="workflow" class="project-detail">
+      <div class="project-header">
+        <h2>How ConvSys delivers value</h2>
+        <p class="project-meta">A clear process for designing, validating, and training on conveyor systems.</p>
+      </div>
+      <div class="project-info">
+        <h3>Project workflow</h3>
+        <ol>
+          <li>Review system requirements and define material flow, sensors, and control zones.</li>
+          <li>Create a virtual conveyor model with PLC logic and diverter control paths.</li>
+          <li>Run simulation tests including fault scenarios, jams, and recovery behaviors.</li>
+          <li>Configure virtual HMI dashboards and operator training scenarios.</li>
+          <li>Deliver documentation, training support, and integration handoff materials.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="featured">
+      <div class="featured-card">
+        <img src="pics/cs.png" alt="Control system dashboard overview">
+        <div class="featured-content">
+          <h3>Complete digital commissioning</h3>
+          <p>Our virtual delivery includes simulated PLC and HMI operation so your team can verify conveyor logic before hardware installation. This reduces commissioning risk and speeds up handoff.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="final-product" class="gallery">
+      <h2>Final Product Preview</h2>
+      <div class="videos">
+        <div class="video-wrap">
+          <video controls muted playsinline>
+            <source src="pics/CONV.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="caption">Final product overview — conveyor sequencing in action.</p>
+        </div>
+        <div class="video-wrap">
+          <video controls muted playsinline>
+            <source src="pics/E3D.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="caption">Final product demo — 3D conveyor flow and system visualization.</p>
+        </div>
+        <div class="video-wrap">
+          <video controls muted playsinline>
+            <source src="pics/Estop_cs.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="caption">Final product validation — emergency stop and control system response.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="about">
+      <h2>Contact</h2>
+      <p>Ready to modernize your conveyor operations? Reach out for a quote, project review, or demo of our virtual system service.</p>
+      <p><strong>Email:</strong> <a href="mailto:info@convsys.com">info@convsys.com</a><br>
+      <strong>Phone:</strong> (555) 123-4567</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container contact">
+      <p><strong>ConvSys Conveyor Solutions</strong> — Virtual Conveyor Systems as a Service.</p>
+      <p class="doc-footer">Designed for fast validation, robust PLC logic, and safe operator training.</p>
+    </div>
   </footer>
 </body>
 </html>
